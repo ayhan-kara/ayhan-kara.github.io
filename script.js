@@ -158,6 +158,43 @@ const portfolioData = {
                 text: "Deneyimi test ederek akışı ve hissiyatı iyileştirme."
             }
         ],
+        certificates: [
+            {
+                title: "Junior Programmer: Apply Object-Oriented Principles(OOP)",
+                issuer: "Unity Technologies",
+                date: "2022",
+                credential: "Unity Learn Pathway",
+                link: "https://learn.unity.com/u/602a73ccedbc2a04313ebcb8"
+            },
+            {
+                title: "Unity Junior Programmer",
+                issuer: "Unity Technologies",
+                date: "2022",
+                credential: "Unity Learn Pathway",
+                link: "https://www.credly.com/badges/2b1f4a8f-acc8-4835-a890-3654af5360dd/public_url"
+            },
+            {
+                title: "Unity ile Dijital Oyun Geliştirmeye Giriş",
+                issuer: "BTK Akademi",
+                date: "2022",
+                credential: "",
+                link: ""
+            },
+            {
+                title: "Global Game Jame 2021",
+                issuer: "The Global Game Jam",
+                date: "2021",
+                credential: "",
+                link: ""
+            },
+            {
+                title: "GFA WINTER JAM",
+                issuer: "ODTÜ TEKNOKENT ATOM",
+                date: "2021",
+                credential: "",
+                link: ""
+            }
+        ],
     },
 
     xr: {
@@ -205,6 +242,50 @@ const portfolioData = {
                 title: "Testing",
                 text: "Cihaz üzerinde test ederek performans ve kullanıcı deneyimini iyileştirme."
             }
+        ],
+        certificates: [
+            {
+                title: "XRAI Hack Clogone Certificate",
+                issuer: "XR Bootcamp",
+                date: "2025",
+                credential: "XRAI Hack Clogone Certificate",
+                link: "https://academy.xrbootcamp.com/certificates/fjyy5lefzf"
+            },
+            {
+                title: "Unity VR Multiplayer Development",
+                issuer: "Udemy",
+                date: "2024",
+                credential: "Unity VR Multiplayer Development (Meta XR SDK & Fusion 1)",
+                link: "https://www.udemy.com/certificate/UC-cba4f2f5-a698-4fdc-a4dd-e30fc22a6bab/"
+            },
+            {
+                title: "Mixed Reality Development Fundamentals",
+                issuer: "Udemy",
+                date: "2024",
+                credential: "Mixed Reality Fundamentals",
+                link: "https://www.udemy.com/certificate/UC-9abd3201-8e60-4506-a5c9-890727bf5818/"
+            },
+            {
+                title: "Build Your Mixed Reality Game & Publish it on Meta's App",
+                issuer: "Udemy",
+                date: "2023",
+                credential: "Build Your Mixed Reality Game & Publish it on Meta's App",
+                link: "https://www.udemy.com/certificate/UC-79ee7af3-5301-46c4-b558-108d0a5800f8/"
+            },
+            {
+                title: "VR Development",
+                issuer: "Unity Technologies",
+                date: "2022",
+                credential: "VR Development Pathway",
+                link: "https://www.credly.com/badges/b0c16a85-1bd7-4645-9a62-324fecf0f6b8/public_url"
+            },
+            {
+                title: "VR Basics",
+                issuer: "Unity Technologies",
+                date: "2022",
+                credential: "VR Basics Development",
+                link: "https://learn.unity.com/u/602a73ccedbc2a04313ebcb8"
+            },
         ],
     },
 
@@ -261,6 +342,22 @@ const portfolioData = {
     //             text: "Test, hata düzeltme ve kullanıcı deneyimini iyileştirme."
     //         }
     //     ],
+    //         certificates: [
+    //             {
+    //                 title: "JavaScript",
+    //                 issuer: "Udemy / Online Course",
+    //                 date: "2024",
+    //                 credential: "Course Certificate",
+    //                 link: ""
+    //             },
+    //             {
+    //                 title: "PHP & MySQL",
+    //                 issuer: "Udemy / Online Course",
+    //                 date: "2024",
+    //                 credential: "Course Certificate",
+    //                 link: ""
+    //             }
+    //         ],
     // }
 };
 
@@ -274,17 +371,17 @@ const detailIntro = document.getElementById("detailIntro");
 const detailFocus = document.getElementById("detailFocus");
 const detailSkills = document.getElementById("detailSkills");
 const detailProjects = document.getElementById("detailProjects");
+const detailCertificates = document.getElementById("detailCertificates");
 const detailProcess = document.getElementById("detailProcess");
 const detailView = document.getElementById("detailView");
 
 async function openPanel(panelName) {
     const data = portfolioData[panelName];
 
-    await loadGithubProjects();
-
     if (!data) {
         return;
     }
+    await loadGithubProjects();
 
     document.body.classList.remove("theme-game", "theme-xr", "theme-web");
     document.body.classList.add("detail-active", `theme-${panelName}`);
@@ -353,6 +450,28 @@ async function openPanel(panelName) {
         top: 0,
         behavior: "smooth"
     });
+
+    const certificatesToShow = data.certificates || [];
+
+    detailCertificates.innerHTML = certificatesToShow.length
+        ? certificatesToShow
+            .map(cert => {
+                const linkButton = cert.link
+                    ? `<a class="cert-link" href="${cert.link}" target="_blank" rel="noopener">View Credential →</a>`
+                    : "";
+
+                return `
+                <article class="certificate-card">
+                    <span class="cert-date">${cert.date || ""}</span>
+                    <h4>${cert.title}</h4>
+                    <p>${cert.issuer || ""}</p>
+                    <p>${cert.credential || ""}</p>
+                    ${linkButton}
+                </article>
+            `;
+            })
+            .join("")
+        : `<p class="cert-empty">Bu alan için sertifika bilgileri yakında eklenecek.</p>`;
 }
 
 function resetPage() {

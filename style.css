@@ -790,3 +790,119 @@ body.theme-web .scene-process {
     color: rgba(255, 255, 255, 0.42);
     font-size: 12px;
 }
+
+.scene-certificates {
+    grid-column: 1 / -1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 34px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+}
+
+.scene-certificates::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    opacity: 0.18;
+    pointer-events: none;
+    background: radial-gradient(circle, currentColor, transparent 58%);
+}
+
+body.theme-game .scene-certificates {
+    color: #ff6b6b;
+}
+
+body.theme-xr .scene-certificates {
+    color: #5eead4;
+}
+
+body.theme-web .scene-certificates {
+    color: #60a5fa;
+}
+
+.certificate-list {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.certificate-card {
+    padding: 22px;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    transition: 0.25s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-4px);
+    background: rgba(0, 0, 0, 0.34);
+}
+
+.cert-date {
+    display: inline-flex;
+    margin-bottom: 14px;
+    color: currentColor;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.certificate-card h4 {
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+    margin-bottom: 8px;
+}
+
+.cert-issuer,
+.cert-credential,
+.cert-empty p {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 14px;
+}
+
+.cert-link,
+.cert-empty a {
+    display: inline-flex;
+    width: fit-content;
+    margin-top: 16px;
+    padding: 8px 11px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+.cert-link:hover,
+.cert-empty a:hover {
+    transform: translateY(-2px);
+    background: #ffffff;
+    color: #080808;
+}
+
+.cert-empty {
+    grid-column: 1 / -1;
+    padding: 22px;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.24);
+    border: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 760px) {
+    .certificate-list {
+        grid-template-columns: 1fr;
+    }
+
+    .scene-certificates {
+        border-radius: 24px;
+        padding: 22px;
+    }
+}
