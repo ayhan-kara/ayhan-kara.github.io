@@ -1,17 +1,137 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ayhan Kara | Öz Geçmiş</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayhan Kara | Game • XR • Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ayhan Kara</h1>
-    <p>Web Developer | PHP | JavaScript | Unity | C#</p>
 
-    <h2>Hakkımda</h2>
-    <p>
-        Yazılım geliştirme, web tabanlı sistemler, API entegrasyonları
-        ve sanal gerçeklik projeleri üzerine çalışmalar yapıyorum.
-    </p>
+<div class="site-shell">
+
+    <header class="minimal-header">
+        <a href="#" class="brand" data-reset>
+            <span>Ayhan</span>
+            <strong>Kara</strong>
+        </a>
+
+        <nav class="quick-nav">
+            <button type="button" data-panel="game">Game</button>
+            <button type="button" data-panel="xr">XR</button>
+            <button type="button" data-panel="web">Web</button>
+            <a href="mailto:ayhankara_01@hotmail.com">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="split-landing" id="landing">
+
+            <article class="world-panel game-panel" data-panel="game">
+                <div class="panel-bg-code"></div>
+                <div class="panel-content">
+                    <p class="panel-kicker">Unity • C# • OOP</p>
+                    <h1>Game</h1>
+                    <p>
+                        Karar mekanikleri, görev akışları, puanlama sistemleri
+                        ve oynanabilir prototipler.
+                    </p>
+                </div>
+                <button type="button" class="panel-open">Explore Game</button>
+            </article>
+
+            <article class="world-panel xr-panel" data-panel="xr">
+                <div class="panel-bg-code"></div>
+                <div class="panel-content">
+                    <p class="panel-kicker">VR • MR • Hand Tracking</p>
+                    <h1>XR</h1>
+                    <p>
+                        Sanal gerçeklik, etkileşimli simülasyonlar,
+                        el takibi ve immersive deneyimler.
+                    </p>
+                </div>
+                <button type="button" class="panel-open">Explore XR</button>
+            </article>
+
+            <article class="world-panel web-panel" data-panel="web">
+                <div class="panel-bg-code"></div>
+                <div class="panel-content">
+                    <p class="panel-kicker">PHP • JavaScript • API</p>
+                    <h1>Web</h1>
+                    <p>
+                        İş süreçleri, sipariş sistemleri, API entegrasyonları
+                        ve yönetim panelleri.
+                    </p>
+                </div>
+                <button type="button" class="panel-open">Explore Web</button>
+            </article>
+
+        </section>
+
+        <section class="detail-view" id="detailView" aria-hidden="true">
+
+            <button type="button" class="back-button" data-reset>
+                ← Ana ekrana dön
+            </button>
+
+            <div class="scene-header">
+                <p class="scene-number" id="detailNumber">01</p>
+
+                <div>
+                    <p class="scene-label" id="detailLabel">Selected Area</p>
+                    <h2 id="detailTitle">Game</h2>
+                    <p id="detailIntro">
+                        Seçilen alanla ilgili açıklama burada görünecek.
+                    </p>
+                </div>
+            </div>
+
+            <div class="scene-grid">
+
+                <section class="scene-main-card">
+                    <span class="card-index">Focus</span>
+                    <h3>Bu alanda ne geliştiriyorum?</h3>
+                    <p id="detailFocus"></p>
+                </section>
+
+                <section class="scene-stack-card">
+                    <span class="card-index">Stack</span>
+                    <h3>Kullandığım teknolojiler</h3>
+                    <div class="skill-orbit" id="detailSkills"></div>
+                </section>
+
+                <section class="scene-projects">
+                    <div class="section-mini-title">
+                        <span>Selected Works</span>
+                        <h3>Öne çıkan çalışmalar</h3>
+                    </div>
+
+                    <div class="project-showcase" id="detailProjects"></div>
+                </section>
+
+                <section class="scene-process">
+                    <div class="section-mini-title">
+                        <span>Process</span>
+                        <h3>Çalışma yaklaşımı</h3>
+                    </div>
+
+                    <div class="process-line" id="detailProcess"></div>
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="floating-footer">
+        <span>Game • XR • Web Portfolio</span>
+        <span>© 2026 Ayhan Kara</span>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
