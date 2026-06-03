@@ -208,60 +208,60 @@ const portfolioData = {
         ],
     },
 
-    web: {
-        number: "03",
-        label: "PHP • JavaScript • API",
-        title: "Web",
-        intro: "İş süreçlerini dijitalleştiren web tabanlı sistemler, yönetim panelleri ve API entegrasyonları.",
-        focus: "Web alanında PHP, JavaScript ve SQL kullanarak sipariş, müşteri, ürün, alış, depo, wareneingang ve Lexware API bağlantılı sistemler geliştiriyorum.",
-        skills: [
-            "PHP",
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "MySQL",
-            "MSSQL",
-            "REST API",
-            "Lexware",
-            "LX Connect",
-            "Workflow Systems"
-        ],
-        projects: [
-            {
-                title: "Yurdum Web Sipariş Sistemi",
-                text: "Müşteri seçimi, ürün listeleme, sepet yönetimi, kullanıcı rolleri ve sipariş süreçlerini içeren web tabanlı sistem.",
-                tags: ["PHP", "JavaScript", "SQL"]
-            },
-            {
-                title: "Wareneingang & Lager Yönetimi",
-                text: "Gelen ürün kontrolü, kısmi teslimat, reddedilen teslimatlar, depo hareketleri ve kayıt detaylarının yönetildiği sistem.",
-                tags: ["PHP", "MSSQL", "Workflow"]
-            },
-            {
-                title: "Lexware API Entegrasyonu",
-                text: "Lexware / LX Connect üzerinden müşteri, ürün ve belge verilerinin web sistemine aktarılması ve süreç otomasyonu.",
-                tags: ["API", "Lexware", "Postman"]
-            }
-        ],
-        process: [
-            {
-                title: "Flow",
-                text: "İş sürecini, kullanıcı rollerini ve veri akışını anlama."
-            },
-            {
-                title: "Structure",
-                text: "Database, sayfa yapısı ve backend mantığını oluşturma."
-            },
-            {
-                title: "Integration",
-                text: "API bağlantıları, form işlemleri ve sistem otomasyonlarını geliştirme."
-            },
-            {
-                title: "Improve",
-                text: "Test, hata düzeltme ve kullanıcı deneyimini iyileştirme."
-            }
-        ],
-    }
+    // web: {
+    //     number: "03",
+    //     label: "PHP • JavaScript • API",
+    //     title: "Web",
+    //     intro: "İş süreçlerini dijitalleştiren web tabanlı sistemler, yönetim panelleri ve API entegrasyonları.",
+    //     focus: "Web alanında PHP, JavaScript ve SQL kullanarak sipariş, müşteri, ürün, alış, depo, wareneingang ve Lexware API bağlantılı sistemler geliştiriyorum.",
+    //     skills: [
+    //         "PHP",
+    //         "JavaScript",
+    //         "HTML",
+    //         "CSS",
+    //         "MySQL",
+    //         "MSSQL",
+    //         "REST API",
+    //         "Lexware",
+    //         "LX Connect",
+    //         "Workflow Systems"
+    //     ],
+    //     projects: [
+    //         {
+    //             title: "Yurdum Web Sipariş Sistemi",
+    //             text: "Müşteri seçimi, ürün listeleme, sepet yönetimi, kullanıcı rolleri ve sipariş süreçlerini içeren web tabanlı sistem.",
+    //             tags: ["PHP", "JavaScript", "SQL"]
+    //         },
+    //         {
+    //             title: "Wareneingang & Lager Yönetimi",
+    //             text: "Gelen ürün kontrolü, kısmi teslimat, reddedilen teslimatlar, depo hareketleri ve kayıt detaylarının yönetildiği sistem.",
+    //             tags: ["PHP", "MSSQL", "Workflow"]
+    //         },
+    //         {
+    //             title: "Lexware API Entegrasyonu",
+    //             text: "Lexware / LX Connect üzerinden müşteri, ürün ve belge verilerinin web sistemine aktarılması ve süreç otomasyonu.",
+    //             tags: ["API", "Lexware", "Postman"]
+    //         }
+    //     ],
+    //     process: [
+    //         {
+    //             title: "Flow",
+    //             text: "İş sürecini, kullanıcı rollerini ve veri akışını anlama."
+    //         },
+    //         {
+    //             title: "Structure",
+    //             text: "Database, sayfa yapısı ve backend mantığını oluşturma."
+    //         },
+    //         {
+    //             title: "Integration",
+    //             text: "API bağlantıları, form işlemleri ve sistem otomasyonlarını geliştirme."
+    //         },
+    //         {
+    //             title: "Improve",
+    //             text: "Test, hata düzeltme ve kullanıcı deneyimini iyileştirme."
+    //         }
+    //     ],
+    // }
 };
 
 const panelButtons = document.querySelectorAll("[data-panel]");
