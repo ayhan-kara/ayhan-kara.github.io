@@ -111,10 +111,23 @@ async function loadGithubProjects() {
     }
 }
 
+function openAboutMe() {
+    document.body.classList.remove("theme-game", "theme-xr", "theme-web");
+    document.body.classList.add("about-active");
+
+    detailView.setAttribute("aria-hidden", "true");
+    aboutView.setAttribute("aria-hidden", "false");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
 const portfolioData = {
     game: {
         number: "01",
-        label: "Unity • Game Systems",
+        label: "Unity • Game Development",
         title: "Game",
         intro: "Oyun mekanikleri, karar sistemleri, görev akışları ve oynanabilir prototipler üzerine çalışmalar.",
         focus: "Game alanında özellikle oyuncu kararları, görev geçişleri, puanlama sistemleri, senaryo yönetimi ve Unity tabanlı oynanabilir prototipler ön planda.",
@@ -289,76 +302,61 @@ const portfolioData = {
         ],
     },
 
-    // web: {
-    //     number: "03",
-    //     label: "PHP • JavaScript • API",
-    //     title: "Web",
-    //     intro: "İş süreçlerini dijitalleştiren web tabanlı sistemler, yönetim panelleri ve API entegrasyonları.",
-    //     focus: "Web alanında PHP, JavaScript ve SQL kullanarak sipariş, müşteri, ürün, alış, depo, wareneingang ve Lexware API bağlantılı sistemler geliştiriyorum.",
-    //     skills: [
-    //         "PHP",
-    //         "JavaScript",
-    //         "HTML",
-    //         "CSS",
-    //         "MySQL",
-    //         "MSSQL",
-    //         "REST API",
-    //         "Lexware",
-    //         "LX Connect",
-    //         "Workflow Systems"
-    //     ],
-    //     projects: [
-    //         {
-    //             title: "Yurdum Web Sipariş Sistemi",
-    //             text: "Müşteri seçimi, ürün listeleme, sepet yönetimi, kullanıcı rolleri ve sipariş süreçlerini içeren web tabanlı sistem.",
-    //             tags: ["PHP", "JavaScript", "SQL"]
-    //         },
-    //         {
-    //             title: "Wareneingang & Lager Yönetimi",
-    //             text: "Gelen ürün kontrolü, kısmi teslimat, reddedilen teslimatlar, depo hareketleri ve kayıt detaylarının yönetildiği sistem.",
-    //             tags: ["PHP", "MSSQL", "Workflow"]
-    //         },
-    //         {
-    //             title: "Lexware API Entegrasyonu",
-    //             text: "Lexware / LX Connect üzerinden müşteri, ürün ve belge verilerinin web sistemine aktarılması ve süreç otomasyonu.",
-    //             tags: ["API", "Lexware", "Postman"]
-    //         }
-    //     ],
-    //     process: [
-    //         {
-    //             title: "Flow",
-    //             text: "İş sürecini, kullanıcı rollerini ve veri akışını anlama."
-    //         },
-    //         {
-    //             title: "Structure",
-    //             text: "Database, sayfa yapısı ve backend mantığını oluşturma."
-    //         },
-    //         {
-    //             title: "Integration",
-    //             text: "API bağlantıları, form işlemleri ve sistem otomasyonlarını geliştirme."
-    //         },
-    //         {
-    //             title: "Improve",
-    //             text: "Test, hata düzeltme ve kullanıcı deneyimini iyileştirme."
-    //         }
-    //     ],
-    //         certificates: [
-    //             {
-    //                 title: "JavaScript",
-    //                 issuer: "Udemy / Online Course",
-    //                 date: "2024",
-    //                 credential: "Course Certificate",
-    //                 link: ""
-    //             },
-    //             {
-    //                 title: "PHP & MySQL",
-    //                 issuer: "Udemy / Online Course",
-    //                 date: "2024",
-    //                 credential: "Course Certificate",
-    //                 link: ""
-    //             }
-    //         ],
-    // }
+    web: {
+        number: "03",
+        label: "PHP • JavaScript • API",
+        title: "Web",
+        intro: "İş süreçlerini dijitalleştiren web tabanlı sistemler, yönetim panelleri ve API entegrasyonları.",
+        focus: "Web alanında PHP, JavaScript ve SQL kullanarak sipariş, müşteri, ürün, alış, depo, wareneingang ve Lexware API bağlantılı sistemler geliştiriyorum.",
+        skills: [
+            "PHP",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "MySQL",
+            "MSSQL",
+            "REST API",
+            "Lexware",
+            "LX Connect",
+            "Workflow Systems"
+        ],
+        projects: [
+            // {
+            //     title: "Yurdum Web Sipariş Sistemi",
+            //     text: "Müşteri seçimi, ürün listeleme, sepet yönetimi, kullanıcı rolleri ve sipariş süreçlerini içeren web tabanlı sistem.",
+            //     tags: ["PHP", "JavaScript", "SQL"]
+            // },
+            // {
+            //     title: "Wareneingang & Lager Yönetimi",
+            //     text: "Gelen ürün kontrolü, kısmi teslimat, reddedilen teslimatlar, depo hareketleri ve kayıt detaylarının yönetildiği sistem.",
+            //     tags: ["PHP", "MSSQL", "Workflow"]
+            // },
+            // {
+            //     title: "Lexware API Entegrasyonu",
+            //     text: "Lexware / LX Connect üzerinden müşteri, ürün ve belge verilerinin web sistemine aktarılması ve süreç otomasyonu.",
+            //     tags: ["API", "Lexware", "Postman"]
+            // }
+        ],
+        process: [
+            {
+                title: "Flow",
+                text: "İş sürecini, kullanıcı rollerini ve veri akışını anlama."
+            },
+            {
+                title: "Structure",
+                text: "Database, sayfa yapısı ve backend mantığını oluşturma."
+            },
+            {
+                title: "Integration",
+                text: "API bağlantıları, form işlemleri ve sistem otomasyonlarını geliştirme."
+            },
+            {
+                title: "Improve",
+                text: "Test, hata düzeltme ve kullanıcı deneyimini iyileştirme."
+            }
+        ],
+        certificates: [],
+    }
 };
 
 const panelButtons = document.querySelectorAll("[data-panel]");
@@ -374,6 +372,8 @@ const detailProjects = document.getElementById("detailProjects");
 const detailCertificates = document.getElementById("detailCertificates");
 const detailProcess = document.getElementById("detailProcess");
 const detailView = document.getElementById("detailView");
+const aboutView = document.getElementById("aboutView");
+const aboutMeButton = document.getElementById("aboutMeButton");
 
 async function openPanel(panelName) {
     const data = portfolioData[panelName];
@@ -387,6 +387,8 @@ async function openPanel(panelName) {
     document.body.classList.add("detail-active", `theme-${panelName}`);
 
     detailView.setAttribute("aria-hidden", "false");
+
+    aboutView.setAttribute("aria-hidden", "true");
 
     detailNumber.textContent = data.number;
     detailLabel.textContent = data.label;
@@ -471,18 +473,20 @@ async function openPanel(panelName) {
             `;
             })
             .join("")
-        : `<p class="cert-empty">Bu alan için sertifika bilgileri yakında eklenecek.</p>`;
+        : `<p class="cert-empty"></p>`;
 }
 
 function resetPage() {
     document.body.classList.remove(
         "detail-active",
+        "about-active",
         "theme-game",
         "theme-xr",
         "theme-web"
     );
 
     detailView.setAttribute("aria-hidden", "true");
+    aboutView.setAttribute("aria-hidden", "true");
 
     window.scrollTo({
         top: 0,
@@ -494,6 +498,9 @@ panelButtons.forEach(button => {
     button.addEventListener("click", () => {
         openPanel(button.dataset.panel);
     });
+    if (aboutMeButton) {
+        aboutMeButton.addEventListener("click", openAboutMe);
+    }
 });
 
 resetButtons.forEach(button => {

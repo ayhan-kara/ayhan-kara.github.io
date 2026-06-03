@@ -17,10 +17,19 @@
         </a>
 
         <nav class="quick-nav">
-            <button type="button" data-panel="game">Game</button>
-            <button type="button" data-panel="xr">XR</button>
-            <button type="button" data-panel="web">Web</button>
-            <a href="mailto:ayhankara_01@hotmail.com">Contact</a>
+            <button type="button" id="aboutMeButton">About Me</button>
+
+            <a href="https://github.com/ayhan-kara" target="_blank" rel="noopener">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/iayhankara" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+
+            <a href="mailto:ayhankara_01@hotmail.com">
+                Contact
+            </a>
         </nav>
     </header>
 
@@ -31,11 +40,11 @@
             <article class="world-panel game-panel" data-panel="game">
                 <div class="panel-bg-code"></div>
                 <div class="panel-content">
-                    <p class="panel-kicker">Unity • C# • OOP</p>
+                    <p class="panel-kicker">Unity • C#</p>
                     <h1>Game</h1>
                     <p>
-                        Karar mekanikleri, görev akışları, puanlama sistemleri
-                        ve oynanabilir prototipler.
+                        Decision mechanics, task flows, scoring systems
+                        and playable prototypes.
                     </p>
                 </div>
                 <button type="button" class="panel-open">Explore Game</button>
@@ -47,8 +56,8 @@
                     <p class="panel-kicker">VR • MR • Hand Tracking</p>
                     <h1>XR</h1>
                     <p>
-                        Sanal gerçeklik, etkileşimli simülasyonlar,
-                        el takibi ve immersive deneyimler.
+                        Virtual reality, interactive simulations,
+                        hand tracking and immersive experiences.
                     </p>
                 </div>
                 <button type="button" class="panel-open">Explore XR</button>
@@ -60,8 +69,8 @@
                     <p class="panel-kicker">PHP • JavaScript • API</p>
                     <h1>Web</h1>
                     <p>
-                        İş süreçleri, sipariş sistemleri, API entegrasyonları
-                        ve yönetim panelleri.
+                        Process workflows, order systems, API integrations
+                        and management panels.
                     </p>
                 </div>
                 <button type="button" class="panel-open">Explore Web</button>
@@ -72,7 +81,7 @@
         <section class="detail-view" id="detailView" aria-hidden="true">
 
             <button type="button" class="back-button" data-reset>
-                ← Ana ekrana dön
+                ← Back to Home
             </button>
 
             <div class="scene-header">
@@ -82,7 +91,7 @@
                     <p class="scene-label" id="detailLabel">Selected Area</p>
                     <h2 id="detailTitle">Game</h2>
                     <p id="detailIntro">
-                        Seçilen alanla ilgili açıklama burada görünecek.
+                        Description of the selected area will appear here.
                     </p>
                 </div>
             </div>
@@ -91,20 +100,20 @@
 
                 <section class="scene-main-card">
                     <span class="card-index">Focus</span>
-                    <h3>Bu alanda ne geliştiriyorum?</h3>
-                    <p id="detailFocus"></p>
+                    <h3>What am I focusing on?</h3>
+                    <p id="detailFocus"></p><br><br><br>
                 </section>
 
                 <section class="scene-stack-card">
                     <span class="card-index">Stack</span>
-                    <h3>Kullandığım teknolojiler</h3>
+                    <h3>Technologies Used</h3>
                     <div class="skill-orbit" id="detailSkills"></div>
                 </section>
 
                 <section class="scene-projects">
                     <div class="section-mini-title">
                         <span>Selected Works</span>
-                        <h3>Öne çıkan çalışmalar</h3>
+                        <h3>Selected Works</h3>
                     </div>
 
                     <div class="project-showcase" id="detailProjects"></div>
@@ -122,11 +131,359 @@
                 <section class="scene-process">
                     <div class="section-mini-title">
                         <span>Process</span>
-                        <h3>Çalışma yaklaşımı</h3>
+                        <h3>Working Approach</h3>
                     </div>
 
                     <div class="process-line" id="detailProcess"></div>
                 </section>
+
+            </div>
+
+        </section>
+
+        <section class="about-view" id="aboutView" aria-hidden="true">
+
+            <button type="button" class="back-button" data-reset>
+                ← Back to Home
+            </button>
+
+            <div class="about-wrapper">
+
+                <div class="about-hero">
+                    <p class="about-kicker">About Me</p>
+                    <h2>Hi, I'm Ayhan Kara.</h2>
+                    <p>
+                        I develop interactive experiences, game systems, XR prototypes
+                        and web-based business applications.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <article class="about-card about-main">
+                        <span>Software Developer | XR Developer | Game Developer</span><br>
+                        <h3>Who I am</h3>
+                        <p>
+                            I am focused on Unity, C#, XR development and web-based systems.
+                            My work combines game logic, interactive simulations, API integrations
+                            and practical business workflows.
+                        </p>
+                        <br><br>
+                    </article>
+
+                    <article class="about-card">
+                        <br>
+                        <h3>Education</h3>
+                        <strong>Associate's Degree in Computer Programming</strong> <p>Süleyman Demirel Universtiy</p><br><br>
+
+                        <h3>Languages</h3>
+                        <div class="about-tags">
+                            <span>Turkish</span>
+                            <span>English</span>
+                            <span>German</span>
+                        </div>
+                    </article>
+
+<!--                    <article class="about-card">-->
+<!--                        <span>Focus</span>-->
+<!--                        <h3>What I build</h3>-->
+<!--                        <ul>-->
+<!--                            <li>Unity game prototypes</li>-->
+<!--                            <li>VR / XR experiences</li>-->
+<!--                            <li>Web dashboards</li>-->
+<!--                            <li>API-based workflow systems</li>-->
+<!--                            <li>Database-driven applications</li>-->
+<!--                        </ul><br>-->
+<!--                        <button type="button" class="panel-open" >View Projects</button>-->
+<!--                    </article>-->
+
+                    <article class="about-card">
+                        <h3>Experience</h3>
+                    </article>
+
+                    <article class="about-card">
+                        <h3>Skills</h3>
+                        <div class="about-tags">
+                            <span>Game Development</span>
+                            <span>VR Development</span>
+                            <span>Mobile Games Development</span>
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>HTML</span>
+                            <span>PHP</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                            <span>REST API</span>
+                            <span>Meta Quest</span>
+                            <span>XR</span>
+                            <span>VR</span>
+                            <span>Nvidia Florence</span>
+                            <span>WebXR</span>
+                            <span>Roboflow</span>
+                            <span>Excel</span>
+                            <span>Word</span>
+                        </div>
+                    </article>
+
+                    <article class="about-card about-projects-card">
+                        <h3>Projects</h3>
+
+                        <div class="about-project-list">
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/mood-see.jpg" alt="MoodSee project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>MoodSee</strong>
+                                    <p>
+                                        An XR app that helps neurodiverse users, especially those with autism,
+                                        by analyzing facial expressions in real time and displaying simple visual cues
+                                        to make social interactions smoother and less stressful.
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://devpost.com/software/c23-moodsee-by-empaths-xr" target="_blank" rel="noopener">
+                                                Watch Demo
+                                            </a>
+                                            <a href="https://github.com/EmpathXR" target="_blank" rel="noopener">
+                                                GitHub
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-xr">XR</span>
+                                            <span class="tag-unity">Unity</span>
+                                            <span class="tag-c#">C#</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/vr-dart-master.png" alt="VR Dart Master project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>VR Dart Master</strong>
+                                    <p>
+                                        A virtual reality dart experience focused on immersive interaction,
+                                        hand-based gameplay and physics-driven throwing mechanics.
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://sites.google.com/view/vr-dart-master/" target="_blank" rel="noopener">
+                                                Watch Demo
+                                            </a>
+                                            <a href="https://drive.google.com/file/d/1QeqGBgDOKCSkuXbuayRLbTf5Zjvo34ki" target="_blank" rel="noopener">
+                                                Play
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-vr">VR</span>
+                                            <span class="tag-unity">Unity</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/gorilla-zilla.png" alt="GorillaZilla project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>GorillaZilla</strong>
+                                    <p>
+                                        A mixed reality game project developed during XR Bootcamp,
+                                        focused on MR gameplay, spatial interaction and Unity-based XR systems.
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://github.com/ayhan-kara/GorillaZilla" target="_blank" rel="noopener">
+                                                GitHub
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-xr">XR</span>
+                                            <span class="tag-unity">Unity</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/color-puzzle-shooter.png" alt="Color Puzzle Shooter project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>Color Puzzle Shooter</strong>
+                                    <p>
+                                        A hypercasual mobile game project developed with a simple,
+                                        colorful and fast-paced puzzle shooting mechanic.
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://apps.apple.com/us/app/color%E2%80%91puzzle%E2%80%91shooter/id6443956140" target="_blank" rel="noopener">
+                                                App Store
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-unity">Unity</span>
+                                            <span class="tag-mobile">Mobile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/parking-lap.png" alt="Parking Lap project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>Parking Lap</strong>
+                                    <p>
+                                        A Hypercasual game from imaginite Studios
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://apps.apple.com/us/app/parking?lap/id1638920228" target="_blank" rel="noopener">
+                                                App Store
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-unity">Unity</span>
+                                            <span class="tag-mobile">Mobile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/make-a-way-traffic.png" alt="Make A Way Traffic project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>Make A Way Traffic</strong>
+                                    <p>
+                                        A Hypercasual game from imaginite Studios
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://apps.apple.com/us/app/make?a?way?traffic/id1644690053" target="_blank" rel="noopener">
+                                                App Store
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-unity">Unity</span>
+                                            <span class="tag-mobile">Mobile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/throw-food.png" alt="Throw Food project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>Throw Food</strong>
+                                    <p>
+                                        A Hypercasual game from imaginite Studios
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://apps.apple.com/us/app/throw?food/id1633263495" target="_blank" rel="noopener">
+                                                App Store
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-unity">Unity</span>
+                                            <span class="tag-mobile">Mobile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/human-gun.png" alt="Color Puzzle Shooter project preview">
+                                </div>
+                                <div class="project-content">
+                                    <strong>Human Gun Clone</strong>
+                                    <p>
+                                        Case Project
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://github.com/ayhan-kara/HumanGunClone" target="_blank" rel="noopener">GitHub</a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-unity">Unity</span>
+                                            <span class="tag-mobile">Mobile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-project-item">
+                                <div class="project-image">
+                                    <img src="assets/projects/wrecking-io.png" alt="Color Puzzle Shooter project preview">
+                                </div>
+
+                                <div class="project-content">
+                                    <strong>Wrecking.io Clone</strong>
+                                    <p>
+                                        A hypercasual game for Case Project
+                                    </p>
+
+                                    <div class="project-footer">
+                                        <div class="project-actions">
+                                            <a href="https://github.com/ayhan-kara/Wrecking.io-Clone" target="_blank" rel="noopener">
+                                                GitHub
+                                            </a>
+                                        </div>
+
+                                        <div class="project-tags">
+                                            <span class="tag-game">Game</span>
+                                            <span class="tag-unity">Unity</span>
+                                            <span class="tag-mobile">Mobile</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
 
             </div>
 
