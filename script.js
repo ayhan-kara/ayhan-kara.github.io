@@ -132,10 +132,15 @@ const portfolioData = {
         intro: "Work on game mechanics, decision systems, quest flows, and playable prototypes.\n",
         focus: "In the game field, player decisions, quest transitions, scoring systems, scenario management, and Unity-based playable prototypes are especially prominent.\n",
         skills: [
-            "Unity",
-            "C#",
-            "Game Logic",
-            "Prototype Development"
+            'Unity',
+            'C#',
+            'OOP',
+            'Mobile Game Development',
+            'Scalability',
+            'Performance Optimization',
+            'Version Control (Git)',
+            'Collaborative Development (GitHub)',
+            'AI/ML Integration'
         ],
         projects: [],
         process: [
@@ -199,46 +204,38 @@ const portfolioData = {
         number: "02",
         label: "VR • XR • Interaction",
         title: "XR",
-        intro: "Sanal gerçeklik, el takibi, fiziksel etkileşimler ve immersive simülasyon deneyimleri.",
-        focus: "XR alanında sanal ortamda doğal kullanıcı etkileşimleri, VR prototipler, Meta Quest cihazları, hand tracking ve fizik tabanlı deneyimler üzerinde çalışmalar yaptım.",
+        intro: "Virtual Reality, Mixed Reality, Interaction Design, Simulation, Immersive User Experience",
+        focus: "My XR work involves designing natural user interactions in virtual environments, creating VR prototypes, utilizing Meta Quest devices, implementing hand tracking, and developing physics-based experiences.",
         skills: [
-            "VR",
-            "XR",
-            "Meta Quest",
-            "Hand Tracking",
-            "Unity XR",
-            "Interaction Design",
-            "Simulation",
-            "Immersive UX"
+            'VR',
+            'MR',
+            'Meta Quest',
+            'Hand Tracking',
+            'Unity XR',
+            'Interaction Design',
+            'Simulation',
+            'Immersive UX',
+            'AR Integration',
+            'Spatial Computing',
+            'AI/ML Integration'
         ],
-        projects: [
-            {
-                title: "VR Dart Simulation",
-                text: "Unity ve VR teknolojileri kullanılarak geliştirilen, el takibi ve fiziksel etkileşimler içeren dart simülasyonu.",
-                tags: ["Unity", "VR", "Hand Tracking"]
-            },
-            {
-                title: "VR Training Prototype",
-                text: "Sürücü kursiyerleri için sanal ortamda eğitim amaçlı prototip geliştirme sürecinde görev aldığım VR proje deneyimi.",
-                tags: ["VR", "Training", "Prototype"]
-            }
-        ],
+        projects: [],
         process: [
             {
                 title: "Experience",
-                text: "Kullanıcının sanal ortamda ne hissedeceğini ve nasıl etkileşime gireceğini belirleme."
+                text: "Determining the user's immersive experience and interaction within virtual environments."
             },
             {
                 title: "Interaction",
-                text: "El takibi, kontrolcü veya fiziksel etkileşim davranışlarını tasarlama."
+                text: "Designing hand tracking, controller, or physical interaction behaviors."
             },
             {
                 title: "Prototype",
-                text: "Unity ve XR araçlarıyla deneyimi çalışır hale getirme."
+                text: "Developing the experience using Unity and XR tools to make it operational."
             },
             {
                 title: "Testing",
-                text: "Cihaz üzerinde test ederek performans ve kullanıcı deneyimini iyileştirme."
+                text: "Testing on devices to improve performance and user experience."
             }
         ],
         certificates: [
@@ -291,8 +288,8 @@ const portfolioData = {
         number: "03",
         label: "PHP • JavaScript • API",
         title: "Web",
-        intro: "İş süreçlerini dijitalleştiren web tabanlı sistemler, yönetim panelleri ve API entegrasyonları.",
-        focus: "Web alanında PHP, JavaScript ve SQL kullanarak sipariş, müşteri, ürün, alış, depo, wareneingang ve Lexware API bağlantılı sistemler geliştiriyorum.",
+        intro: "Developing digital solutions for business processes using web-based systems, management panels, and API integrations.",
+        focus: "Web development using PHP, JavaScript, and SQL for order, customer, product, purchase, warehouse, API systems.",
         skills: [
             "PHP",
             "JavaScript",
@@ -301,43 +298,44 @@ const portfolioData = {
             "MySQL",
             "MSSQL",
             "REST API",
-            "Lexware",
-            "LX Connect",
             "Workflow Systems"
         ],
         projects: [
-            // {
-            //     title: "Yurdum Web Sipariş Sistemi",
-            //     text: "Müşteri seçimi, ürün listeleme, sepet yönetimi, kullanıcı rolleri ve sipariş süreçlerini içeren web tabanlı sistem.",
-            //     tags: ["PHP", "JavaScript", "SQL"]
-            // },
-            // {
-            //     title: "Wareneingang & Lager Yönetimi",
-            //     text: "Gelen ürün kontrolü, kısmi teslimat, reddedilen teslimatlar, depo hareketleri ve kayıt detaylarının yönetildiği sistem.",
-            //     tags: ["PHP", "MSSQL", "Workflow"]
-            // },
-            // {
-            //     title: "Lexware API Entegrasyonu",
-            //     text: "Lexware / LX Connect üzerinden müşteri, ürün ve belge verilerinin web sistemine aktarılması ve süreç otomasyonu.",
-            //     tags: ["API", "Lexware", "Postman"]
-            // }
+            {
+                title: "Yurdum",
+                text: "A product introduction page for the company’s products and an information page about the company.",
+                tags: ["HTML", "JavaScript", "CSS"],
+                link: "https://yurdum-food.de/"
+            },
+            {
+                title: "Helal Foods",
+                text: "A product introduction page for the company’s products and an information page about the company.",
+                tags: ["HTML", "Javascript", "CSS"],
+                link: "https://www.helal-foods.de/"
+            },
+            {
+                title: "Messe Portal",
+                text: "Contacts established and meetings held during fairs are recorded, and product promotion activities are carried out.",
+                tags: ["API", "PHP", "MySQL", "Admin Panel", "CSS"],
+                link: "https://www.1house.org/public/login.php"
+            }
         ],
         process: [
             {
                 title: "Flow",
-                text: "İş sürecini, kullanıcı rollerini ve veri akışını anlama."
+                text: "Understanding the workflow, user roles, and data flow."
             },
             {
                 title: "Structure",
-                text: "Database, sayfa yapısı ve backend mantığını oluşturma."
+                text: "Designing database schema, page structure, and backend logic."
             },
             {
                 title: "Integration",
-                text: "API bağlantıları, form işlemleri ve sistem otomasyonlarını geliştirme."
+                text: "Developing API connections, form handling, and system automation."
             },
             {
                 title: "Improve",
-                text: "Test, hata düzeltme ve kullanıcı deneyimini iyileştirme."
+                text: "Testing, error correction, and improving user experience."
             }
         ],
         certificates: [],
@@ -395,9 +393,16 @@ async function openPanel(panelName) {
                 .map(tag => `<span>${tag}</span>`)
                 .join("");
 
+            let linkName='';
+            if(data.number === "03"){
+                linkName="Website";
+            }else{
+                linkName="Github";
+            }
+
             const linkButton = project.link
-                ? `<a class="project-link" href="${project.link}" target="_blank" rel="noopener">GitHub →</a>`
-                : `<span class="project-link muted">Private / In Progress</span>`;
+                ? `<a class="project-link" href="${project.link}" target="_blank" rel="noopener">${linkName} →</a>`
+                : `<span class="project-link muted">In Progress</span>`;
 
             const meta = project.updatedAt
                 ? `<small class="project-meta">Updated: ${new Date(project.updatedAt).toLocaleDateString("tr-TR")}</small>`
