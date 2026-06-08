@@ -129,46 +129,31 @@ const portfolioData = {
         number: "01",
         label: "Unity • Game Development",
         title: "Game",
-        intro: "Oyun mekanikleri, karar sistemleri, görev akışları ve oynanabilir prototipler üzerine çalışmalar.",
-        focus: "Game alanında özellikle oyuncu kararları, görev geçişleri, puanlama sistemleri, senaryo yönetimi ve Unity tabanlı oynanabilir prototipler ön planda.",
+        intro: "Work on game mechanics, decision systems, quest flows, and playable prototypes.\n",
+        focus: "In the game field, player decisions, quest transitions, scoring systems, scenario management, and Unity-based playable prototypes are especially prominent.\n",
         skills: [
             "Unity",
             "C#",
             "Game Logic",
-            "Scenario Flow",
-            "Decision Systems",
-            "Task Management",
-            "Scoring",
             "Prototype Development"
         ],
-        projects: [
-            {
-                title: "OneDayJob Career Simulation",
-                text: "Karar mekanikleri, görev akışı, puanlama sistemi ve senaryo yönetimi içeren kariyer simülasyonu.",
-                tags: ["Unity", "C#", "Simulation"]
-            },
-            {
-                title: "Decision Task System",
-                text: "Oyuncunun seçtiği seçeneklere göre sonraki görevlere geçiş yapan, flag ve score değerleriyle ilerleyen sistem.",
-                tags: ["Game Logic", "Runtime", "Tasks"]
-            }
-        ],
+        projects: [],
         process: [
             {
                 title: "Idea",
-                text: "Oynanabilir fikri ve temel etkileşim mantığını belirleme."
+                text: "Define playable concept and basic interaction logic."
             },
             {
                 title: "Prototype",
-                text: "Unity içinde hızlı prototip oluşturarak mekanikleri test etme."
+                text: "Create quick prototype in Unity to test mechanics."
             },
             {
                 title: "Logic",
-                text: "Görev akışı, karar sistemi, flag ve score yapılarını kurma."
+                text: "Establish quest flow, decision system, flag and score structures."
             },
             {
                 title: "Playtest",
-                text: "Deneyimi test ederek akışı ve hissiyatı iyileştirme."
+                text: "Test experience to refine flow and immersion."
             }
         ],
         certificates: [
